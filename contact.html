@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | Contact Us</title>
+   <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+
+<!--  
+     NAVBAR
+-->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png"
+                 alt="Giftora Logo">
+        </a>
+
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Shop
+            </a>
+
+            <a href="about.html">
+                About us
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="cart.html" class="cart-link">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                Cart
+
+                <span id="cart-count">0</span>
+
+            </a>
+
+        </nav>
+
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <p class="eyebrow">
+        WE'D LOVE TO HEAR FROM YOU
+    </p>
+
+    <h1>
+        Contact Us
+    </h1>
+
+    <p>
+        Have a question? We're here to help.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+
+<section class="contact-section">
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <div class="contact-info">
+
+        <p class="eyebrow">
+            GET IN TOUCH
+        </p>
+
+        <h2>
+            Let's talk about
+            your perfect gift.
+        </h2>
+
+        <p class="contact-intro">
+            Whether you need help choosing a gift,
+            have a question about your order, or simply
+            want to say hello, feel free to reach out.
+        </p>
+
+
+        <!-- EMAIL -->
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Email Us
+                </h3>
+
+                <p>
+                    hello@giftora.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHONE -->
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+
+                <i class="fa-solid fa-phone"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Call Us
+                </h3>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LOCATION -->
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WORKING HOURS -->
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+
+                <i class="fa-solid fa-clock"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Working Hours
+                </h3>
+
+                <p>
+                    Monday - Saturday
+                </p>
+
+                <p>
+                    10:00 AM - 7:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form-box">
+
+        <h2>
+            Send Us a Message
+        </h2>
+
+        <p>
+            Fill out the form and we'll get back to you
+            as soon as possible.
+        </p>
+
+
+        <form id="contactForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+
+            <!-- SUBJECT -->
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What can we help you with?"
+                    required>
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="contact-submit">
+
+                Send Message
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+
+            <p id="formMessage"
+               class="form-message">
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAQ SECTION
+===================================================== -->
+
+<section class="faq-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            QUICK ANSWERS
+        </p>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+    </div>
+
+
+    <div class="faq-grid">
+
+
+        <div class="faq-card">
+
+            <h3>
+                How can I track my order?
+            </h3>
+
+            <p>
+                Once your order is shipped, you will
+                receive tracking information through
+                your registered email address.
+            </p>
+
+        </div>
+
+
+
+        <div class="faq-card">
+
+            <h3>
+                Can I send a gift directly to someone?
+            </h3>
+
+            <p>
+                Yes! Simply enter the recipient's delivery
+                address during checkout.
+            </p>
+
+        </div>
+
+
+
+        <div class="faq-card">
+
+            <h3>
+                Can I add a personal message?
+            </h3>
+
+            <p>
+                Yes. Many of our gifts can include a
+                personalized message for your loved one.
+            </p>
+
+        </div>
+
+
+
+        <div class="faq-card">
+
+            <h3>
+                How can I contact Giftora?
+            </h3>
+
+            <p>
+                You can contact us through the form on
+                this page or email us at hello@giftora.com.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <img src="images/logo.png"
+                 alt="Giftora Logo">
+
+            <p>
+                Thoughtful gifts made for life's
+                most beautiful moments.
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Shop
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CUSTOMER CARE -->
+
+        <div class="footer-column">
+
+            <h3>
+                Customer Care
+            </h3>
+
+            <a href="#">
+                Delivery
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Get In Touch
+            </h3>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@giftora.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                India
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Giftora. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if (menuBtn) {
+
+    menuBtn.addEventListener("click", function () {
+
+        navLinks.classList.toggle("show");
+
+    });
+
+}
+
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+
+        formMessage.textContent =
+            "Thank you! Your message has been sent successfully. 💗";
+
+
+        formMessage.style.display = "block";
+
+
+        contactForm.reset();
+
+    });
+
+}
+
+
+
+/* =====================================================
+   CART COUNT
+===================================================== */
+
+function updateCartCount() {
+
+    const cart =
+        JSON.parse(
+            localStorage.getItem("giftoraCart")
+        ) || [];
+
+
+    const count =
+        cart.reduce(function(total, item) {
+
+            return total + (item.quantity || 0);
+
+        }, 0);
+
+
+    const cartCount =
+        document.getElementById("cart-count");
+
+
+    if (cartCount) {
+
+        cartCount.textContent = count;
+
+    }
+
+}
+
+
+updateCartCount();
+
+</script>
+
+
+</body>
+
+</html>

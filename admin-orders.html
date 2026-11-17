@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | Order Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="admin.js" defer></script>
+</head>
+
+<body class="management-page">
+
+    <header class="dashboard-navbar">
+
+       <div class="dashboard-brand">
+    <img src="logo.png" alt="Giftora Logo" class="admin-brand-logo">
+
+</div>
+
+        <nav class="dashboard-nav">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-products.html">Products</a>
+            <a href="admin-users.html">Users</a>
+            <a href="admin-orders.html" class="active">Orders</a>
+            <a href="admin-login.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="management-container">
+
+        <div class="management-heading">
+
+            <div>
+                <h1>Order Management</h1>
+                <p>View and manage customer orders.</p>
+            </div>
+
+        </div>
+
+
+        <div class="management-toolbar">
+
+            <input
+                type="search"
+                id="orderSearch"
+                placeholder="Search by order ID or customer...">
+
+        </div>
+
+
+        <div class="management-table-card">
+
+            <div class="table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Order Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="orderRows"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

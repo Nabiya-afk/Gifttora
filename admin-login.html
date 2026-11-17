@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | Admin Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="admin-login-page">
+
+    <main class="admin-login-container">
+
+        <div class="admin-login-card">
+
+            <img src="logo.png" alt="Giftora Logo" class="admin-logo">
+
+            <p class="admin-label">ADMINISTRATOR PORTAL</p>
+
+            <h1>Welcome Back!</h1>
+
+            <p class="admin-description">
+                Login to access your Giftora dashboard.
+            </p>
+
+            <form id="adminLoginForm">
+
+                <div class="admin-form-group">
+                    <label for="adminEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="admin-form-group">
+                    <label for="adminPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter your password"
+                        required>
+                </div>
+
+                <div class="admin-forgot">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button
+                    type="button"
+                    class="admin-login-btn"
+                    onclick="window.location.href='admin-dashboard.html'">
+
+                    LOGIN
+
+                </button>
+
+            </form>
+
+            <p class="admin-access">
+                Restricted access · Administrator only
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

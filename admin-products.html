@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | Product Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="admin.js" defer></script>
+</head>
+
+<body class="management-page">
+
+    <header class="dashboard-navbar">
+
+        <div class="dashboard-brand">
+    <img src="logo.png" alt="Giftora Logo" class="admin-brand-logo">
+
+</div>
+
+        <nav class="dashboard-nav">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-products.html" class="active">Products</a>
+            <a href="admin-users.html">Users</a>
+            <a href="admin-orders.html">Orders</a>
+            <a href="admin-login.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="management-container">
+
+        <div class="management-heading">
+            <div>
+                <h1>Product Management</h1>
+                <p>Manage and organize your Giftora products.</p>
+            </div>
+        </div>
+
+
+        <div class="management-toolbar">
+
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search products...">
+
+            <button class="primary-admin-btn" id="addProductBtn">
+                + Add Product
+            </button>
+
+        </div>
+
+
+        <div class="management-table-card">
+
+            <div class="table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productRows"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Add / Edit Product Modal -->
+
+    <div class="admin-modal-overlay" id="productModal" hidden>
+
+        <form class="admin-modal-card" id="productForm">
+
+            <h2 id="productModalTitle">Add New Product</h2>
+
+            <input type="hidden" id="productId">
+
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" required>
+
+            <label for="productCategory">Category</label>
+            <select id="productCategory" required>
+                <option value="">Select Category</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Customized</option>
+                <option>Wedding</option>
+                <option>Plants</option>
+            </select>
+
+            <label for="productPrice">Price (₹)</label>
+            <input type="number" id="productPrice" min="1" required>
+
+            <label for="productStock">Stock</label>
+            <input type="number" id="productStock" min="0" required>
+
+            <div class="modal-buttons">
+
+                <button type="submit" class="primary-admin-btn">
+                    Save Product
+                </button>
+
+                <button type="button" class="secondary-admin-btn" id="closeProductModal">
+                    Cancel
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Admin Navigation -->
+    <header class="dashboard-navbar">
+
+      <div class="dashboard-brand">
+    <img src="logo.png" alt="Giftora Logo" class="admin-brand-logo">
+
+</div>
+
+        <nav class="dashboard-nav">
+            <a href="admin-dashboard.html" class="active">Dashboard</a>
+            <a href="admin-products.html">Products</a>
+            <a href="admin-users.html">Users</a>
+            <a href="admin-orders.html">Orders</a>
+            <a href="admin-login.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard Content -->
+    <main class="dashboard-container">
+
+        <div class="dashboard-heading">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back, Administrator!</p>
+            </div>
+
+            <span class="admin-badge">Admin</span>
+        </div>
+
+
+        <!-- Statistics Cards -->
+        <section class="dashboard-stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <p>Total Products</p>
+                <h2>128</h2>
+                <span>Available products</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <p>Total Users</p>
+                <h2>542</h2>
+                <span>Registered customers</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🛒</div>
+                <p>Total Orders</p>
+                <h2>328</h2>
+                <span>Orders received</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <p>Total Revenue</p>
+                <h2>₹1,24,500</h2>
+                <span>Total store revenue</span>
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-action-buttons">
+                <a href="admin-products.html">+ Add Product</a>
+                <a href="admin-orders.html">View Orders</a>
+                <a href="admin-users.html">Manage Users</a>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Orders -->
+        <section class="recent-orders">
+
+            <div class="table-heading">
+                <h2>Recent Orders</h2>
+                <a href="admin-orders.html">View All Orders →</a>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#1001</td>
+                            <td>Aisha Patel</td>
+                            <td>Personalized Mug</td>
+                            <td>₹499</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#1002</td>
+                            <td>Riya Shah</td>
+                            <td>Photo Frame</td>
+                            <td>₹699</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#1003</td>
+                            <td>Neha Joshi</td>
+                            <td>Gift Hamper</td>
+                            <td>₹999</td>
+                            <td><span class="status shipped">Shipped</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#1004</td>
+                            <td>Diya Mehta</td>
+                            <td>Customized Cushion</td>
+                            <td>₹599</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

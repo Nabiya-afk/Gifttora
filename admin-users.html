@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giftora | User Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="admin.js" defer></script>
+</head>
+
+<body class="management-page">
+
+    <header class="dashboard-navbar">
+
+       <div class="dashboard-brand">
+    <img src="logo.png" alt="Giftora Logo" class="admin-brand-logo">
+
+</div>
+
+        <nav class="dashboard-nav">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-products.html">Products</a>
+            <a href="admin-users.html" class="active">Users</a>
+            <a href="admin-orders.html">Orders</a>
+            <a href="admin-login.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="management-container">
+
+        <div class="management-heading">
+            <div>
+                <h1>User Management</h1>
+                <p>View and manage registered Giftora customers.</p>
+            </div>
+        </div>
+
+
+        <div class="management-toolbar">
+
+            <input
+                type="search"
+                id="userSearch"
+                placeholder="Search users by name, email or phone...">
+
+        </div>
+
+
+        <div class="management-table-card">
+
+            <div class="table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Email Address</th>
+                            <th>Phone</th>
+                            <th>Joined Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="userRows"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
